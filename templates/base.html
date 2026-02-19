@@ -4,18 +4,24 @@
         <meta charset="utf-8">
         <title>LakeMUN</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
     </head>
     <body>
 
         <header>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/conference">Conference</a>
-                <a href="/committees">Committees</a>
-                <a href="/registration">Registration</a>
-                <a href="/resources">Resources</a>
-                <a href="/contact">Contact</a>
+            <nav class="navbar">
+                <a href="/" class="logo">
+                    <img src="{{ url_for('static', filename='images/logo_nobg.png') }}" alt="LakeMUN Logo">
+                </a>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/conference">Conference</a>
+                    <a href="/committees">Committees</a>
+                    <a href="/registration">Registration</a>
+                    <a href="/resources">Resources</a>
+                    <a href="/contact">Contact</a>
+                </div>
             </nav>
         </header>
 

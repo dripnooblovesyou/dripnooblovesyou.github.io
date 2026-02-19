@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to LakeMUN</h1>
-    <p>Empowering future global leaders.</p>
+    <div class="slideshow-container">
+
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/slide1.jpg') }}">
+        </div>
+
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/slide2.jpg') }}">
+        </div>
+
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/slide3.jpg') }}">
+        </div>
+
+        <div class="hero-text">
+            <h1>Welcome to LakeMUN</h1>
+        </div>
+
+    </div>
 {% endblock %}
