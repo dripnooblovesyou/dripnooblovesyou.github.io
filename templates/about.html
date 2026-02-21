@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to LakeMUN</h1>
-    <p>Empowering future global leaders.</p>
+    <section class="about-section">
+        <h1>About LakeMUN</h1>
+        <div class="about-image-wrapper">
+            <img src="{{ url_for('static', filename='images/logo_nobg.png') }}" alt="LakeMUN" class="about-image">
+        </div>
+        <div class="about-text">
+            <p>LakeMUN is a student-run Model United Nations conference hosted by Lakeside School in Seattle, Washington. Our mission is to empower future global leaders by providing an engaging and educational platform for students to develop their diplomacy, public speaking, and critical thinking skills.</p>
+            <p>Founded in 2020, LakeMUN has quickly become a premier MUN conference in the Pacific Northwest, attracting students from across the region. We are committed to fostering a collaborative and inclusive environment where students can explore global issues and work together to find solutions.</p>
+        </div>
+    </section>
 {% endblock %}

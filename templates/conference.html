@@ -1,6 +1,38 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to LakeMUN</h1>
-    <p>Empowering future global leaders.</p>
+<section class="conference-section">
+    <h1 class="conference-title">LakeMUN 2026 Conference Information</h1>
+
+    <div class="conference-cards">
+
+        <div class="conference-card">
+            <h2>Venue</h2>
+            <p>Lakeside School</p>
+        </div>
+
+        <div class="conference-card">
+            <h2>Address</h2>
+            <p>14050 1st Ave NE<br>Seattle, WA 98125</p>
+        </div>
+
+        <div class="conference-card">
+            <h2>Date</h2>
+            <p>May 2, 2026</p>
+        </div>
+
+    </div>
+</section>
+<section class="keynote-section">
+    <div class="keynote-container">
+        <div class="keynote-speaker">
+            <h2 class="keynote-important">Keynote Speaker</h2>
+            <p><strong class="keynote-important">Joy Hollingsworth</strong>, Member of the Seattle City Council from the 3rd District</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum tristique sem eu mattis. Maecenas eget risus libero. Vivamus non rhoncus massa. Nullam bibendum massa a augue interdum, non rutrum nisi varius. Duis sit amet lectus quis ex ullamcorper hendrerit pellentesque in erat. Nullam eget tempor velit, nec luctus nisi. Aenean mattis justo sed elit lobortis malesuada.</p>
+        </div>
+        <div class="keynote-image-wrapper">
+            <img src="{{ url_for('static', filename='images/joy hollingsworth.jpg') }}" alt="Joy Hollingsworth" class="keynote-image">
+        </div>
+    </div>
+</section>
 {% endblock %}

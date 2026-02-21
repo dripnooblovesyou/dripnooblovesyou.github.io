@@ -18,4 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(showSlides, 4000);
     }
 
+    const about = document.querySelector(".about-container");
+
+    if (!about) return;
+
+    function revealOnScroll() {
+        const position = about.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (position < screenPosition) {
+            about.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
 });
