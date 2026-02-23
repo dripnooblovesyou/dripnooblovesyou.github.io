@@ -1,6 +1,72 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to LakeMUN</h1>
-    <p>Empowering future global leaders.</p>
+<section class="committees-section">
+    <div class="committees-header">
+        <p class="committees-kicker">LakeMUN 2026</p>
+        <h1>Committees</h1>
+        <p class="committees-intro">
+            Click each committee to open its background guide, sample topics, and delegate focus.
+        </p>
+    </div>
+
+    <div class="committee-list">
+        <details class="committee-dropdown">
+            <summary>
+                <span class="committee-name">UN Security Council (UNSC)</span>
+                <span class="committee-tag">Advanced</span>
+            </summary>
+            <div class="committee-body">
+                <h2>Sample Topic</h2>
+                <p>
+                    Topic A: Stabilizing post-conflict governance in a fictional region affected by proxy warfare.
+                    Delegates should prepare bloc strategy, emergency directives, and enforcement options.
+                </p>
+                <h2>Placeholder Background</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo ut velit vulputate
+                    tincidunt. Integer luctus hendrerit sem, a iaculis nibh placerat vel.
+                </p>
+            </div>
+        </details>
+
+        <details class="committee-dropdown">
+            <summary>
+                <span class="committee-name">World Health Organization (WHO)</span>
+                <span class="committee-tag">Intermediate</span>
+            </summary>
+            <div class="committee-body">
+                <h2>Sample Topic</h2>
+                <p>
+                    Topic B: Coordinating equitable vaccine distribution during a rapidly spreading cross-border
+                    outbreak with competing national priorities and supply shortages.
+                </p>
+                <h2>Placeholder Background</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique, sapien at malesuada
+                    gravida, massa neque lacinia turpis, sed auctor erat lacus id mi.
+                </p>
+            </div>
+        </details>
+
+        <details class="committee-dropdown">
+            <summary>
+                <span class="committee-name">UN Environment Programme (UNEP)</span>
+                <span class="committee-tag">Beginner-Friendly</span>
+            </summary>
+            <div class="committee-body">
+                <h2>Sample Topic</h2>
+                <p>
+                    Topic C: Building an international framework to reduce marine plastic waste while balancing
+                    economic development and local manufacturing realities.
+                </p>
+                <h2>Placeholder Background</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula mattis arcu, sed
+                    pulvinar lorem congue nec. Curabitur convallis finibus erat non posuere.
+                </p>
+            </div>
+        </details>
+    </div>
+</section>
 {% endblock %}
