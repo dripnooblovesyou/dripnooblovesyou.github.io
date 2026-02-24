@@ -3,12 +3,74 @@
 {% block content %}
     <section class="about-section">
         <h1>About LakeMUN</h1>
-        <div class="about-image-wrapper">
-            <img src="{{ url_for('static', filename='images/logo_nobg.png') }}" alt="LakeMUN" class="about-image">
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <img src="{{ url_for('static', filename='images/logo_nobg.png') }}" alt="LakeMUN" class="about-image">
+            </div>
+            <div class="about-text">
+                <p>LakeMUN is a student-run Model United Nations conference hosted by Lakeside School in Seattle, Washington. Our mission is to empower future global leaders by providing an engaging and educational platform for students to develop their diplomacy, public speaking, and critical thinking skills.</p>
+                <p>Founded in 2020, LakeMUN has quickly become a premier MUN conference in the Pacific Northwest, attracting students from across the region. We are committed to fostering a collaborative and inclusive environment where students can explore global issues and work together to find solutions.</p>
+            </div>
         </div>
-        <div class="about-text">
-            <p>LakeMUN is a student-run Model United Nations conference hosted by Lakeside School in Seattle, Washington. Our mission is to empower future global leaders by providing an engaging and educational platform for students to develop their diplomacy, public speaking, and critical thinking skills.</p>
-            <p>Founded in 2020, LakeMUN has quickly become a premier MUN conference in the Pacific Northwest, attracting students from across the region. We are committed to fostering a collaborative and inclusive environment where students can explore global issues and work together to find solutions.</p>
+
+        <div class="team-sections">
+            <section class="team-section">
+                <h2>Model UN Leaders</h2>
+                <div class="team-grid team-grid-two">
+                    <article class="person-card">
+                        <h3>Leader 1</h3>
+                        <p>Model UN Leader</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Leader 2</h3>
+                        <p>Model UN Leader</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="team-section">
+                <h2>Model UN Dais</h2>
+                <div class="team-grid">
+                    <article class="person-card">
+                        <h3>Dais Member 1</h3>
+                        <p>Dais Team</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Dais Member 2</h3>
+                        <p>Dais Team</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Dais Member 3</h3>
+                        <p>Dais Team</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Dais Member 4</h3>
+                        <p>Dais Team</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="team-section">
+                <h2>Media and Marketing Team</h2>
+                <div class="team-grid">
+                    <article class="person-card">
+                        <h3>Media &amp; Marketing 1</h3>
+                        <p>Media and Marketing</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Media &amp; Marketing 2</h3>
+                        <p>Media and Marketing</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Media &amp; Marketing 3</h3>
+                        <p>Media and Marketing</p>
+                    </article>
+                    <article class="person-card">
+                        <h3>Media &amp; Marketing 4</h3>
+                        <p>Media and Marketing</p>
+                    </article>
+                </div>
+            </section>
         </div>
     </section>
 {% endblock %}
