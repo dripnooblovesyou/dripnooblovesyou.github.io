@@ -530,6 +530,21 @@ footer {
     transform: translateY(0);
 }
 
+.committee-dais-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.committee-dais-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+}
+
+.committee-dais-card p {
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -551,6 +566,10 @@ footer {
 
     .schedule-list {
         grid-template-columns: 1fr;
+    }
+
+    .committee-dais-card {
+        flex-direction: column;
     }
 }
 
