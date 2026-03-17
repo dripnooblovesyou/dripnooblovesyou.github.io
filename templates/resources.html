@@ -1,6 +1,45 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Resources</h1>
-    <p>New to Model United Nations? Review the MUN Northwest Long-Form Rules of Procedure, the handy simplified Flow-of-Debate summary, and (if applicable) the Modified ROP details ahead of time to understand how your committee will run. Co-Directors will also briefly remind delegates of ROP during the first committee session at conference.</p>
+    <section class="resources-section">
+        <h1>Resources</h1>
+        <p>New to Model United Nations? Review the MUN Northwest Long-Form Rules of Procedure, the handy simplified Flow-of-Debate summary, and (if applicable) the Modified ROP details ahead of time to understand how your committee will run. Co-Directors will also briefly remind delegates of ROP during the first committee session at conference.</p>
+
+        <div class="resource-guides">
+            <article class="resource-guide-card">
+                <h2>Future Crisis Committee</h2>
+                <a class="resource-guide-link" href="{{ url_for('static', filename='background guides/Panem Congress Background Guide LakeMUN26.pdf') }}" target="_blank" rel="noopener noreferrer">Open Panem Background Guide</a>
+            </article>
+            <article class="resource-guide-card">
+                <h2>Arctic Council</h2>
+                <a class="resource-guide-link" href="{{ url_for('static', filename='background guides/AC Background Guide LakeMUN26.pdf') }}" target="_blank" rel="noopener noreferrer">Open Arctic Council Background Guide</a>
+            </article>
+            <article class="resource-guide-card">
+                <h2>World Health Organization (WHO)</h2>
+                <a class="resource-guide-link" href="{{ url_for('static', filename='background guides/WHO Background Guide LakeMUN26.pdf') }}" target="_blank" rel="noopener noreferrer">Open WHO Background Guide</a>
+            </article>
+        </div>
+
+        <div class="resource-library">
+            <h2>Conference Documents</h2>
+            <div class="resource-guides">
+                <article class="resource-guide-card">
+                    <h2>MUNNW Long Form ROP</h2>
+                    <a class="resource-guide-link" href="{{ url_for('static', filename='resources/MUNNW Long Form ROP.pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                </article>
+                <article class="resource-guide-card">
+                    <h2>LakeMUN Simplified Flow of Debate</h2>
+                    <a class="resource-guide-link" href="{{ url_for('static', filename='resources/LakeMUN Simplified Flow of Debate.pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                </article>
+                <article class="resource-guide-card">
+                    <h2>Modified ROP (Panem Congress)</h2>
+                    <a class="resource-guide-link" href="{{ url_for('static', filename='resources/Modified ROP (Panem Congress).pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                </article>
+                <article class="resource-guide-card">
+                    <h2>LakeMUN Resolution Paper Template</h2>
+                    <a class="resource-guide-link" href="{{ url_for('static', filename='resources/LakeMUN Resolution Paper Template.pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                </article>
+            </div>
+        </div>
+    </section>
 {% endblock %}
