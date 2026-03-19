@@ -926,7 +926,7 @@ footer {
 
 .resource-guide-link {
     margin-top: 0;
-    background: #5a0a0a;
+    background: linear-gradient(135deg, #7a0f0f 0%, #9f1414 100%);
     border-color: #5a0a0a;
     color: #ffe8a3;
 }
