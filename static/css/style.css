@@ -474,19 +474,11 @@ footer {
 }
 
 .dais-role {
-    display: inline-block;
+    display: block;
     margin-top: 0.45rem;
-    max-width: 100%;
-    font-size: 0.74rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 1px solid #5a0a0a;
-    border-radius: 4px;
-    padding: 0.32rem 0.55rem;
-    color: #5a0a0a;
-    background: linear-gradient(135deg, #f7e6ba 0%, #ebd29a 100%);
-    white-space: normal;
-    overflow-wrap: anywhere;
+    font-size: 0.96rem;
+    color: #333;
+    font-weight: 400;
 }
 
 .dais-bio {
@@ -563,6 +555,7 @@ footer {
 
 .committees-header {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .committees-kicker {
@@ -580,7 +573,7 @@ footer {
 }
 
 .committees-intro {
-    margin: 0;
+    margin: 0 auto;
     max-width: 760px;
     line-height: 1.55;
     color: #2f2f2f;
@@ -672,9 +665,9 @@ footer {
 }
 
 .committee-dropdown[open] .committee-body {
-    max-height: 2400px;
+    max-height: 6000px;
     opacity: 1;
-    padding: 0 0 1.9rem;
+    padding: 0 0 2.8rem;
 }
 
 .committee-body h2 {
@@ -766,6 +759,10 @@ footer {
     margin-top: 0.35rem;
 }
 
+.committee-body > .committee-dais-list {
+    margin-bottom: 1.4rem;
+}
+
 .committee-dais-card {
     color: #fff7ea;
 }
@@ -799,6 +796,10 @@ footer {
         font-size: 2rem;
     }
 
+    .registration-card h1 {
+        font-size: 2rem;
+    }
+
     .committee-dropdown summary {
         flex-direction: column;
         align-items: flex-start;
@@ -806,22 +807,18 @@ footer {
 }
 
 .registration-section {
-    min-height: 78vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    background: #ffffff;
-    border-radius: 24px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
 }
 
 .registration-card {
-    width: 100%;
-    max-width: 760px;
-    background: #fffdf8;
-    border: 1px solid #e2cc92;
-    border-radius: 18px;
-    padding: 2rem 1.7rem;
+    width: min(100%, 760px);
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -835,17 +832,17 @@ footer {
 }
 
 .registration-card h1 {
-    margin: 0.5rem 0 1rem;
+    margin: 0 0 1rem;
     color: #5a0a0a;
-    font-size: 2.4rem;
+    font-size: 2.7rem;
 }
 
 .registration-text {
     margin: 0 auto;
-    max-width: 620px;
+    max-width: 680px;
     color: #2f2f2f;
-    line-height: 1.65;
-    font-size: 1.05rem;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 .registration-link {
@@ -880,14 +877,18 @@ footer {
     padding: 3rem 1.5rem 4rem;
 }
 
-.resources-section h1 {
+.resources-header {
+    text-align: center;
+}
+
+.resources-header h1 {
     margin: 0 0 1rem;
     font-size: 2.7rem;
     color: #5a0a0a;
 }
 
-.resources-section p {
-    margin: 0;
+.resources-header p {
+    margin: 0 auto;
     max-width: 760px;
     line-height: 1.6;
     color: #2f2f2f;
